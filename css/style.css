@@ -28,6 +28,7 @@ a{
 }
 li{
     list-style-type: none;
+    margin: 0 auto;
 }
 nav{
     top: 0;
@@ -69,7 +70,41 @@ nav{
     display: none;
 }
 .content{
-    background: var(--accent1);
-    max-width: 960px;
+    max-width: 1600px;
     width: 100%;
+}
+main{
+    background: var(--accent1);
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+iframe{
+    margin: 0 auto;
+    max-width: 550px;
+}
+.sleepoutside{
+    grid-column: 1/2;
+}
+.sleepoutside ul{
+    padding: 0;
+    display: flex;
+}
+.sleepoutside li a:hover{
+    color:#EE6C4D;
+}
+.final-project{
+    grid-column: 2/3;
+}
+@media screen and (min-width:600px) {
+    
+}
+@media screen and (min-width:960px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 15px;
+    }
+
 }
